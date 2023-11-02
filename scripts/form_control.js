@@ -1,12 +1,5 @@
-data_path = "../data/data.txt"
-
-async function start() {
-  // gets the text file
-  const response = await fetch(data_path);
-  let data = await response.text();
-  data = data.split("\r\n");
-
-  // used until data.txt works in github
+function main() {
+  // data for each form field
   data = ["jdoe@jdoe.com",
     "(999)-999-9999",
     "John Doe",
@@ -20,4 +13,5 @@ async function start() {
   jquery_functions(data);
 }
 
-start();
+//run program
+main();
