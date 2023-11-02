@@ -17,7 +17,7 @@ function clear_button(){
   });
 }
 
-// used to set the contents of a data file as values to specefic fields
+// used to set the contents the data as values to specefic fields
 function set_html(text){
   $( "#set" ).on( "click", function() {
     set_option(text[4]);
@@ -46,7 +46,7 @@ function set_html(text){
   });
 }
 
-// chooses a value for the selection menu and sets the option accordingly
+// chooses a value for the selection menu and set the option accordingly
 function get_selection(){
   $( "#hear" ).change( function() {
     set_option($(this).val());
